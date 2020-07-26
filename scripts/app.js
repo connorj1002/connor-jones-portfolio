@@ -27,16 +27,45 @@
 $(".experience-page").css({ "width": "0" });
 $(".experience-page").hide();
 $(".experience-home-snippet").hide();
+$(".experience-contents").hide();
 
 $(".experience-tab").on("click", function () {
   $("main").fadeOut(600);
   $(".experience-page").show();
   $(".experience-page").animate({ width: "75vw" }, 700);
-  $(".experience-home-snippet").delay(300).fadeIn(800);
+  $(".experience-contents").delay(200).fadeIn(500);
+  $(".experience-home-snippet").delay(400).fadeIn(500);
 });
 
-// user clicks experience tab
-// experience page grows from 0 to 70vw
-// main fades
-// home tab appears on far right of experience page
-// remaining vw displays home snip
+$(".experience-home-tab").on("click", function () {
+  $(".experience-home-snippet").delay(100).fadeOut(600);
+  $(".experience-contents").fadeOut(700);
+  $(".experience-page").animate({ width: 0 }, 700);
+  $(".experience-page").hide(0);
+  $("main").delay(300).fadeIn(700);
+});
+
+
+
+$(".projects-page").css({ "height": "0" });
+$(".projects-container").hide();
+$(".projects-page").hide();
+$(".projects-home-snippet").hide();
+$(".projects-contents").hide();
+
+$(".projects-tab").on("click", function () {
+  $("main").fadeOut(600);
+  $(".projects-container").show();
+  $(".projects-page").show();
+  $(".projects-page").animate({ height: "75vh" }, 700);
+  $(".projects-contents").delay(200).fadeIn(500);
+  $(".projects-home-snippet").delay(400).fadeIn(500);
+});
+
+$(".projects-home-tab").on("click", function () {
+  $(".projects-home-snippet").delay(100).fadeOut(600);
+  $(".projects-contents").fadeOut(700);
+  $(".projects-page").animate({ height: 0 }, 700);
+  $(".projects-page").hide(0);
+  $("main").delay(300).fadeIn(700);
+});
