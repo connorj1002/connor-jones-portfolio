@@ -6,6 +6,21 @@
 
 body {
   display: flex;
+  
+}
+
+.fixed-background {
+  margin-left: 20vw;
+  height: 100vh;
+  width: 80vw;
+  position: fixed;
+  background: rgb(34,193,195);
+  background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
+  /* background: url('https://t4.ftcdn.net/jpg/02/18/60/71/240_F_218607106_oFxVJkewUDeqUhxH3tfnjGX6JrsDVWhA.jpg'); */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -5;
 }
 
 .sidebar {
@@ -17,6 +32,8 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: rgb(44, 44, 44);
+  color: white;
 }
 
 .sidebar>nav>ul {
@@ -24,23 +41,33 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+  list-style: none;
 }
 
 main {
   margin-left: 20vw;
   width: 80vw;
   overflow: scroll;
+  
 }
 
 header {
   height: 20vh;
   background: transparent;
   border: solid black;
+  overflow: scroll;
+  display: flex;
+  align-items: flex-end;
+  font-size: 38px;
+  color: rgba(255, 255, 255, 0.733);
+  /* color: rgba(17, 88, 121, 0.815); */
+
 }
 
 section {
   height: 100vh;
   border: solid black;
+  background-color: white;
 }
 
 .connor-jones {
@@ -119,15 +146,28 @@ section {
 }
 
 .languages>ul {
-  height: 90%;
+  height: 70%;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+  list-style: none;
 }
 
 .other-tech {
   width: 40%;
   height: 100%;
+}
+
+.libraries-frameworks {
+  margin-bottom: 20px;
+}
+
+.libraries-frameworks>ul {
+  list-style: none;
+}
+
+.databases>ul {
+  list-style: none;
 }
 
 .other {
