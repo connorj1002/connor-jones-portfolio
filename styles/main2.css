@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Noto Sans SC', sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 
 body {
@@ -21,7 +21,7 @@ body {
 }
 
 .site-open>h1 {
-  width: 178px;
+  width: 195px;
 }
 
 main {
@@ -36,11 +36,53 @@ main {
   text-align: center;
 }
 
+.home-pic {
+  height: auto;
+  max-width: 25%;
+  margin-bottom: 15px;
+  border-radius: 50%;
+  border: thin solid black;
+}
 
+.snippet-pic {
+  height: auto;
+  max-width: 35%;
+  border-radius: 50%;
+  border: thin solid black;
+}
+
+.connor-jones {
+  margin-bottom: 10px;
+}
+
+
+
+
+
+
+.experience-home-snippet {
+  position: absolute;
+  right: 0;
+  height: 100vh;
+  width: 25vw;
+  background-color: tomato;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 5;
+}
+
+.experience-page {
+  position: absolute;
+  left: 0;
+  height: 100vh;
+  z-index: 5;
+}
 
 .experience-tab {
   position: absolute;
-  left: 0;
+  right: 0;
   height: 100vh;
   width: 60px;
   display: flex;
@@ -70,104 +112,11 @@ main {
   align-items: center;
 }
 
-
-
-.projects-tab {
-  position: absolute;
-  bottom: 0;
-  height: 60px;
-  width: 100vw;
-  display: flex;
-  justify-content: center;
-  cursor: pointer;
-  z-index: 2;
-  font-size: 1.2rem;
-  transition: background-color .4s, transform .3s;
-}
-
-.projects-tab:hover {
-  background-color: gainsboro;
-  transform: scale(1.05);
-}
-
-.projects-tab>i {
-  margin-right: 15px;
-  display: flex;
-  align-items: center;
-}
-
-.projects-tab>h4 {
-  display: flex;
-  align-items: center;
-}
-
-
-
-.contact-tab {
-  position: absolute;
-  right: 0;
-  height: 100vh;
-  width: 60px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  cursor: pointer;
-  z-index: 1;
-  font-size: 1.2rem;
-  transition: background-color .4s, transform .3s;
-}
-
-.contact-tab:hover {
-  background-color: gainsboro;
-  transform: scale(1.05);
-}
-
-.contact-tab>i {
-  margin-top: 15px;
-  display: flex;
-  justify-content: center;
-}
-
-.contact-tab>h4 {
-  writing-mode: vertical-rl;
-  text-orientation: mixed;
-  transform: rotate(180deg);
-  display: flex;
-  align-items: center;
-}
-
-
-
-
-
-
-.experience-home-snippet {
-  position: absolute;
-  right: 0;
-  height: 100vh;
-  width: 25vw;
-  background-color: tomato;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  z-index: 5;
-}
-
-.experience-page {
-  position: absolute;
-  left: 0;
-  height: 100vh;
-  width: 75vw;
-  background-color: turquoise;
-  z-index: 5;
-}
-
 .experience-home-tab {
   position: absolute;
   right: 0;
   height: 100%;
-  width: 50px;
+  width: 45px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -200,30 +149,25 @@ main {
   position: absolute;
   left: 0;
   height: 100%;
-  width: calc(100% - 50px);
+  width: calc(100% - 45px);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: turquoise;
 }
 
 
 
 
 
-.projects-container {
-  height: 100vh;
-  width: 100vw;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
+
+
 
 .projects-home-snippet {
   position: absolute;
   top: 0;
-  height: 25vh;
+  height: 20vh;
   width: 100vw;
   background-color: tomato;
   display: flex;
@@ -235,16 +179,43 @@ main {
 .projects-page {
   position: absolute;
   bottom: 0;
-  height: 75vh;
   width: 100vw;
-  background-color: turquoise;
   z-index: 5;
+}
+
+.projects-tab {
+  position: absolute;
+  top: 0;
+  height: 60px;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 2;
+  font-size: 1.2rem;
+  transition: background-color .4s, transform .3s;
+}
+
+.projects-tab:hover {
+  background-color: gainsboro;
+  transform: scale(1.05);
+}
+
+.projects-tab>i {
+  margin-right: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.projects-tab>h4 {
+  display: flex;
+  align-items: center;
 }
 
 .projects-home-tab {
   position: absolute;
   top: 0;
-  height: 50px;
+  height: 40px;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -262,7 +233,7 @@ main {
 .projects-home-tab>i {
   margin-right: 15px;
   display: flex;
-  justify-content: center;
+  align-items: center;
 }
 
 .projects-home-tab>h4 {
@@ -273,10 +244,115 @@ main {
 .projects-contents {
   position: absolute;
   bottom: 0;
-  height: calc(100% - 50px);
+  height: calc(100% - 40px);
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: turquoise;
+}
+
+
+
+
+
+
+
+
+.contact-home-snippet {
+  position: absolute;
+  left: 0;
+  height: 100vh;
+  width: 25vw;
+  background-color: tomato;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 5;
+}
+
+.contact-page {
+  position: absolute;
+  right: 0;
+  height: 100vh;
+  z-index: 5;
+}
+
+.contact-tab {
+  position: absolute;
+  left: 0;
+  height: 100vh;
+  width: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 1;
+  font-size: 1.2rem;
+  transition: background-color .4s, transform .3s;
+}
+
+.contact-tab:hover {
+  background-color: gainsboro;
+  transform: scale(1.05);
+}
+
+.contact-tab>i {
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+}
+
+.contact-tab>h4 {
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  transform: rotate(180deg);
+  display: flex;
+  align-items: center;
+}
+
+.contact-home-tab {
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 45px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 1;
+  font-size: 1.2rem;
+  transition: background-color .4s, transform .3s;
+}
+
+.contact-home-tab:hover {
+  background-color: gainsboro;
+  transform: scale(1.05);
+}
+
+.contact-home-tab>i {
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: center;
+}
+
+.contact-home-tab>h4 {
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  display: flex;
+  align-items: center;
+}
+
+.contact-contents {
+  position: absolute;
+  right: 0;
+  height: 100%;
+  width: calc(100% - 45px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: turquoise;
 }
