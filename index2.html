@@ -266,7 +266,21 @@
 
     <div class="contact-page">
       <div class="contact-contents">
-        <h1>Contact</h1>
+        <div class="contact-form-container">
+          <h1>Contact Me</h1>
+          <form class="contact form" action="https://mailthis.to/connorj1002@gmail.com"
+            method="POST" encType="multipart/form-data">
+            <input type="text" name="name" placeholder="Your name"><br/>
+            <input type="email" name="_replyto" placeholder="Your email"><br/>
+            <textarea name="message" placeholder="Enter your message here"></textarea><br/>
+            <input type="file" name="file" placeholder="Attachments (optional)"><br/>
+            <input type="hidden" name="_subject" value="Portfolio Contact Form">
+            <!-- <input type="hidden" name="_after" value=""> -->
+            <input type="hidden" name="_honeypot" value="">
+            <input type="hidden" name="_confirmation" value="Thank you for your message. I look forward to receiving it!">
+            <input id="submit" type="submit" value="Send">
+          </form>
+        </div>
       </div>
       <div class="contact-home-tab">
         <i class="fas fa-chevron-left"></i>
@@ -278,7 +292,49 @@
       </div>
     </div>
     <div class="contact-home-snippet">
-      <h2>Connor Jones</h2>
+      <div class="snippet-top">
+        <img class="snippet-pic" src="https://lh3.googleusercontent.com/hw_GQeEJrBWZdUnfcnVAR-iXSFn_mYo8wXAjKdPIi9rDnMDTYBSxUn-Pv1Rf-pppVKMqOnqhf8Ek0zqFmOocnjcQjxXcnjGl6CkNaMa_93OYwZ4pOKf706jCZ-sDL781ulI5h-Jx9TjDfdy02r6zmEPB-3UebzZn2bLX6o8Ki-wZH-jeQOkSYISooLrEh1ni6nNYgD7HtVOt4tuUcvKHgqGl7JQdUwO20bRILn7PH1uD3O0fCVs34kQ83yVqFyYVqJ-4C-XykbSFeAJIxkTBgj7AytEZ2R-V9kRdCGCX-xl-Dv1fEcuYvwt1gb5h6skrr_nlMekaNf3jbeQLVIK0nsQaoWAFcCwxEYDRGxGqW5gMpBFGWPYu7NVkdsSp_qEgpW4i52snIQrCKhl9HTiTdOdbzQ_N3_btgiF424BqcNNzIW5Gfqk38h2c8ulOyQrOJLj0qCiQx1msFmccC70l-_IhxpzmaSHb8EeywiDXAzLlQqclsVHuWdf-_a5ltSKXfyYzrvknhYCDwpOgWeYR1he1Xxp7EbTz739_Qf1NaJ0G-9tPG3vc2wuBQPlyfz7ctGtR-NIQKtJShAaXbb0zamT_jqP0YUp6FdRp0pdf0UBlqzJ57MIV1yfhJpNj5CCIOZO7Xq-Cp-TRL_A-7q5YATppLtZarCZuRGPzJsJ8exziHaNuP6OF6nqYkbzG=w900-h905-no?authuser=0" alt="connor-jones">
+        <h2 class="snippet-name">Connor Jones</h2>
+        <h4 class="snippet-title">Software Engineer</h4>
+        <div class="snippet-connect">
+          <a href="https://github.com/connorj1002" target="_blank"><i class="fab fa-github-square"></i></a>
+          <a href="https://www.linkedin.com/in/connor-a-jones/" target="_blank"><i class="fab fa-linkedin"></i></a>
+          <a href="mailto:connorj1002@gmail.com"><i class="fas fa-envelope-square"></i></a>
+        </div>
+      </div>
+      <div class="snippet-bottom">
+        <div class="language-db-container">
+          <div class="languages">
+            <h4>Languages</h4>
+            <ul>
+              <li><i class="fab fa-js"></i> JavaScript</li>
+              <li><i class="fab fa-python"></i> Python</li>
+              <li><i class="fab fa-html5"></i> HTML5</li>
+              <li><i class="fab fa-css3"></i> CSS3</li>
+            </ul>
+          </div>
+          <div class="databases">
+            <h4>Databases</h4>
+            <ul>
+              <li>>PostgreSQL</li>
+              <li>>NoSQL</li>
+            </ul>
+          </div>
+        </div>
+        <div class="libraries-frameworks">
+          <h4>Libraries/Frameworks</h4>
+          <ul>
+            <li>>React.js</li>
+            <li>>Node.js</li>
+            <li>>Express</li>
+            <li>>Django</li>
+            <li>>jQuery</li>
+            <li>>EJS</li>
+            <li>>Jinga</li>
+            <li>>Sass</li>
+          </ul>
+        </div>
+      </div>
     </div>
 
   </main>

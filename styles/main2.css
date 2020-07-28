@@ -355,7 +355,6 @@ main {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  font-family: 'Montserrat', sans-serif;
   letter-spacing: 0.5px;
   z-index: 5;
 }
@@ -371,7 +370,7 @@ main {
   justify-content: center;
 }
 
-.snippet-name-horiontal {
+.snippet-name-horizontal {
   font-family: 'Montserrat', sans-serif;
   letter-spacing: 1px;
   margin-bottom: 2px;
@@ -396,8 +395,8 @@ main {
 }
 
 .snippet-right {
-  width: 520px;
-  min-width: 330px;
+  width: 530px;
+  min-width: 340px;
   height: 80%;
   display: flex;
   justify-content: space-between;
@@ -411,6 +410,8 @@ main {
 .horizontal-languages>h4 {
   height: 20%;
   text-decoration: underline;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 0.5px;
 }
 
 .horizontal-languages>ul {
@@ -423,6 +424,8 @@ main {
 .horizontal-libraries-frameworks>h4, .horizontal-databases>h4 {
   height: 20%;
   text-decoration: underline;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 0.5px;
 }
 
 .horizontal-libraries-frameworks>ul, .horizontal-databases>ul {
@@ -592,13 +595,12 @@ main {
   left: 0;
   height: 100vh;
   width: 25vw;
-  background-color: tomato;
+  padding: 2% 0;
+  background-color: rgb(136, 202, 171);
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
-  font-family: 'Montserrat', sans-serif;
-  letter-spacing: 0.5px;
   z-index: 5;
 }
 
@@ -685,7 +687,48 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: turquoise;
+  font-size: 0.9rem;
+  background: rgb(171,228,230);
+  background: linear-gradient(90deg, rgba(171,228,230,1) 10%, rgba(255,255,255,1) 95%);
+}
+
+.contact-form-container {
+  height: 90%;
+  width: 90%;
+  padding: 25px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-form-container>h1 {
+  height: 10%;
+  margin: 15px 0 10px 0;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 1.3px;
+  text-decoration: underline;
+}
+
+.contact-form {
+  width: 90%;
+  height: 80%;
+}
+
+.contact-form-container>form>input {
+  margin-bottom: 15px;
+  width: 270px;
+}
+
+.contact-form-container>form>textarea {
+  margin-bottom: 15px;
+  width: 270px;
+  height: 240px;
+}
+
+#submit {
+  width: 80px;
 }
 
 
