@@ -1,25 +1,25 @@
-// $("#underscore").hide();
-// $("main").hide();
+$("#underscore").hide();
+$("main").hide();
 
-// let i = 0;
-// let siteOpen = "hello world";
-// const speed = 60;
+let i = 0;
+let siteOpen = "hello world";
+const speed = 60;
 
-// function typing() {
-//   if (i < siteOpen.length) {
-//     document.getElementById("hello-world").innerHTML += siteOpen.charAt(i);
-//     i++;
-//     setTimeout(typing, speed);
-//   };
-// };
+function typing() {
+  if (i < siteOpen.length) {
+    document.getElementById("hello-world").innerHTML += siteOpen.charAt(i);
+    i++;
+    setTimeout(typing, speed);
+  };
+};
 
-// typing();
-// $("#underscore").delay(700).fadeIn(300).fadeOut(300);
-// $("#underscore").delay(500).fadeIn(300).fadeOut(300);
-// $("#underscore").delay(500).fadeIn(300).fadeOut(300);
-// $(".site-open").delay(3400).fadeOut(300);
+typing();
+$("#underscore").delay(700).fadeIn(300).fadeOut(300);
+$("#underscore").delay(500).fadeIn(300).fadeOut(300);
+$("#underscore").delay(500).fadeIn(300).fadeOut(300);
+$(".site-open").delay(3400).fadeOut(300);
 
-// $("main").delay(3800).fadeIn(800);
+$("main").delay(3800).fadeIn(800);
 
 
 

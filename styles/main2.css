@@ -718,12 +718,12 @@ main {
 
 .contact-form-container>form>input {
   margin-bottom: 15px;
-  width: 270px;
+  width: 370px;
 }
 
 .contact-form-container>form>textarea {
   margin-bottom: 15px;
-  width: 270px;
+  width: 370px;
   height: 240px;
 }
 
