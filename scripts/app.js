@@ -1,5 +1,6 @@
 $("#underscore").hide();
 $("main").hide();
+$(".site-nav").hide();
 
 let i = 0;
 let siteOpen = "hello world";
@@ -20,6 +21,8 @@ $("#underscore").delay(500).fadeIn(300).fadeOut(300);
 $(".site-open").delay(3400).fadeOut(300);
 
 $("main").delay(3800).fadeIn(800);
+$(".site-nav").delay(5800).show(200);
+$(".site-nav").delay(2000).hide(200);
 
 
 

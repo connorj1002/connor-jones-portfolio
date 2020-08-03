@@ -121,6 +121,62 @@ main {
   color: black;
 }
 
+.resume-icon {
+  transform: scale(1.1, 0.89);
+}
+
+
+
+
+
+.site-nav-experience {
+  position: absolute;
+  top: 40%;
+  left: 15px;
+}
+
+.site-nav-experience>h5 {
+  text-align: left;
+}
+
+.site-nav-experience>i {
+  margin: 10px 100px 0 0;
+  transform: rotate(180deg) scale(1.5);
+}
+
+
+.site-nav-work {
+  position: absolute;
+  bottom: 15px;
+  right: 10%;
+  display: flex;
+}
+
+.site-nav-work>h5 {
+  text-align: left;
+}
+
+.site-nav-work>i {
+  margin: 15px 10px 0 0;
+  transform: rotate(90deg) scale(1.5) scaleY(-1);
+}
+
+
+.site-nav-contact {
+  position: absolute;
+  top: 40%;
+  right: 15px;
+}
+
+.site-nav-contact>h5 {
+  text-align: right;
+}
+
+.site-nav-contact>i {
+  margin: 10px 0 0 100px;
+  transform: scale(1.5) scaleY(-1);
+}
+
 
 
 
