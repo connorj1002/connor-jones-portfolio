@@ -374,7 +374,7 @@ main {
 }
 
 .experience-education {
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   text-decoration: underline;
   font-family: 'Montserrat', sans-serif;
   letter-spacing: 1.1px;
@@ -743,6 +743,7 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  overflow: scroll;
   font-size: 0.9rem;
   background: rgb(171,228,230);
   background: linear-gradient(90deg, rgba(171,228,230,1) 10%, rgba(255,255,255,1) 95%);
@@ -755,7 +756,6 @@ main {
   border-radius: 15px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
 }
 
@@ -780,11 +780,25 @@ main {
 .contact-form-container>form>textarea {
   margin-bottom: 15px;
   width: 370px;
-  height: 240px;
+  height: 280px;
+  border: thin solid gray;
+  padding: 10px;
+  border-radius: 3px;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.form-field {
+  border: none;
+  border-bottom: thin solid gray;
+  padding: 0 10px;
+  border-radius: 3px 3px 0 0;
+  background-color: rgba(255, 255, 255, 0.8);
 }
 
 #submit {
   width: 80px;
+  border-radius: 3px;
+  border: thin solid gray;
 }
 
 
